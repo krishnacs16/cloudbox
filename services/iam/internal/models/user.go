@@ -1,12 +1,9 @@
 package models
 
-
-import "time"
-
 type User struct {
-	ID        int64
-	Username  string
-	CreatedAt time.Time
+	BaseModel
+
+	Username string
 }
 
 type AccessKey struct {
